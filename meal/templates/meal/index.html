@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+  <h1>This is meals file..</h1>
+
+<div class="container">
+    <div class="row">
+        {% for i in  data %}
+        <div class="col-4">
+            <div class="card">
+                <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{i.idCategory}}</h5>
+                  <h5 class="card-title">{{i.strCategory}}</h5>
+                  <p class="card-text">{{i.strCategoryDescription | truncatewords:10 }}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

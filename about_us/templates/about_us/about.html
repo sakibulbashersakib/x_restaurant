@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static "css/style.css" %}">
+<h1>This is about page............</h1>
+
+<div class="container">
+    <div class="row">
+            <div class="col-6">
+                <img class="img-fluid" src="{% static "image/about.avif" %}" alt="">
+            </div>
+            <div class="col-6" >
+                <h1>ABOUT US.</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quos culpa itaque quaerat, doloribus provident quidem dolorum minus quo placeat, porro hic obcaecati vero atque laboriosam, adipisci dolor illo eligendi!</p>
+            </div> 
+    </div>
+</div>
+{% endblock content %}
